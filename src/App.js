@@ -35,13 +35,13 @@ function FutureDashboard() {
                 <div className='nav-bar'>
                   <div className='inner-frame'>
                     <p>Navigation menu</p>
-                    <ArrowForward/>
+                    <ArrowForward className='props'/>
                   </div>
                 </div>
                 <div className='menu'>
                   <div className='inner-frame'>
                     <p>Menu</p>
-                    <ArrowForward/>
+                    <ArrowForward className='props'/>
                   </div>
                 </div>
                 <div className='social-icons'>

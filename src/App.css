@@ -20,7 +20,6 @@ div{
   border: 0;
   box-sizing: border-box;
   color: #333;
-  font-family: sans-serif;
   line-height: 1;
   list-style: none;
   margin: 0;
@@ -281,7 +280,6 @@ div{
 }
 .top-row .right-col .header .nav-bar .inner-frame p{
   color: #FFFFFF;
-  font-family: var(--s-font-b195d9c4);
   font-size: 20px;
   font-weight: 600;
   height: auto;
@@ -293,6 +291,34 @@ div{
   justify-content: flex-start;
   margin: 0;
 }
+.top-row .right-col .header .nav-bar .inner-frame .props{
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  transition: .3s ease;
+  transform: rotate(-45deg);
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.top-row .right-col .header .nav-bar .inner-frame:hover {
+  background: #fff;
+}
+
+.top-row .right-col .header .nav-bar .inner-frame:hover p,
+.top-row .right-col .header .nav-bar .inner-frame:hover .props {
+  color: #000;
+}
+
+.top-row .right-col .header .nav-bar .inner-frame:hover .props {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
 .top-row .right-col .header .menu{
   align-items: center;
   background: rgba(0,0,0,0.0);
@@ -343,6 +369,30 @@ div{
   max-width: 100%;
   justify-content: flex-start;
 }
+.top-row .right-col .header .menu .inner-frame .props{
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  transition: .3s ease;
+  transform: rotate(-45deg);
+}
+.top-row .right-col .header .menu .inner-frame:hover {
+  background: #fff;
+}
+
+.top-row .right-col .header .menu .inner-frame:hover p,
+.top-row .right-col .header .menu .inner-frame:hover .props {
+  color: #000;
+}
+
+.top-row .right-col .header .menu .inner-frame:hover .props {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
 .top-row .right-col .header .social-icons{
   display: flex;
   align-items: center;
@@ -372,6 +422,12 @@ div{
 .top-row .right-col .header .social-icons .s-icon i{
   color: #FFFFFF;
   font-size: 16px;
+}
+.top-row .right-col .header .social-icons .s-icon:hover{
+  background-color: #fff;
+}
+.top-row .right-col .header .social-icons .s-icon:hover i{
+  color: #000;
 }
 .top-row .right-col .content{
   display: flex;
@@ -530,7 +586,6 @@ div{
 }
 .bottom-row .left-col .content .title h1{
   color: #000000;
-  font-family: var(--s-font-b195d9c4);
   font-size: 60px;
   font-weight: 600;
   height: auto;
@@ -677,7 +732,6 @@ div{
 .bottom-row .left-col .content .description{
   color: #000000;
   flex: none;
-  font-family: var(--s-font-b195d9c4);
   font-size: 23px;
   font-weight: 600;
   height: auto;
@@ -751,6 +805,11 @@ strong{
   color: #000000;
   font-size: 24px;
   transform: rotate(-45deg);
+  transition: .3s all ease;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
 }
 .bottom-cards .get-started .h-line{
   background: #000000;
@@ -759,6 +818,20 @@ strong{
   margin: 4px 0px 0px 0px;
   width: 100%;
   max-width: 100%;
+}
+.bottom-cards .get-started:hover{
+  background: #000;
+}
+.bottom-cards .get-started:hover .title p,
+.bottom-cards .get-started:hover .title i
+{
+  color: #fff;
+}
+.bottom-cards .get-started:hover .h-line{
+  background: #fff;
+}
+.bottom-cards .get-started:hover .title i{
+  transform: rotate(45deg);
 }
 .bottom-cards .pricing{
   display: flex;
@@ -806,6 +879,11 @@ strong{
   color: #000000;
   font-size: 24px;
   transform: rotate(-45deg);
+  transition: .3s all ease;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
 }
 .bottom-cards .pricing .h-line{
   background: #000000;
@@ -815,7 +893,20 @@ strong{
   width: 100%;
   max-width: 100%;
 }
-
+.bottom-cards .pricing:hover{
+  background: #000;
+}
+.bottom-cards .pricing:hover .title p,
+.bottom-cards .pricing:hover .title i
+{
+  color: #fff;
+}
+.bottom-cards .pricing:hover .h-line{
+  background: #fff;
+}
+.bottom-cards .pricing:hover .title i{
+  transform: rotate(45deg);
+}
 .bottom-row .right-col{
   display: flex;
   align-items: flex-start;
@@ -1293,6 +1384,7 @@ strong{
   color: #FFFFFF;
   font-size: 24px;
   transform: rotate(-45deg);
+  transition: .3s all ease;
 }
 .row2 .top .img-holder{
   display: flex;
@@ -1414,7 +1506,12 @@ strong{
 .row2 .content .description p{
   margin: 0;
 }
-
+.right-col .row2:hover .top .title i{
+  transform: rotate(45deg);
+}
+.right-col .row2:hover .top .img-holder{
+  transform: scale(1.1);
+}
 
 @media screen and (max-width: 1140px) {
   .top-row .right-col .content{
@@ -1614,10 +1711,6 @@ strong{
     max-width: 100%;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 540px) {
   .contents .top-row .left-col{
