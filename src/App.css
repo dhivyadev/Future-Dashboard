@@ -991,6 +991,11 @@ strong{
   color: #FFFFFF;
   font-size: 24px;
   transform: rotate(-45deg);
+  transition: .3s all ease;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
 }
 
 .row1 .membership .details{
@@ -1114,7 +1119,9 @@ strong{
   width: 100%;
   max-width: 100%;
 }
-
+.row1 .membership:hover .title i{
+  transform: rotate(45deg);
+}
 .row1 .database{
   display: flex;
   align-items: flex-start;
@@ -1175,6 +1182,11 @@ strong{
   color: #000;
   font-size: 24px;
   transform: rotate(-45deg);
+  transition: .3s all ease;
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
+  -ms-transition: .3s all ease;
+  -o-transition: .3s all ease;
 }
 
 .row1 .database .details{
@@ -1297,6 +1309,9 @@ strong{
   height: 1px;
   width: 100%;
   max-width: 100%;
+}
+.row1 .database:hover .title i{
+  transform: rotate(45deg);
 }
 .bottom-row .right-col .row2{
   display: flex;
